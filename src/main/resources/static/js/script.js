@@ -6,10 +6,10 @@ window.addEventListener('load', function () {
         const taskForm = document.getElementById("form");
         let data = new FormData(taskForm);
 
-        fetch("http://localhost:8080/task", {
+        fetch("http://localhost:4040/task", {
             method: 'POST',
             body: data
-        }).then(r => r.json()).then(data => {window.location.href = "http://localhost:8080/"});
+        }).then(r => r.json()).then(data => {window.location.href = "http://localhost:4040/"});
     });
 
 });
