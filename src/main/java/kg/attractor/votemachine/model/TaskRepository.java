@@ -1,0 +1,5 @@
+package kg.attractor.votemachine.model;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface TaskRepository extends CrudRepository<Task, String> { }
